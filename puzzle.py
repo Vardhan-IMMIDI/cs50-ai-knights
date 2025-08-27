@@ -51,7 +51,7 @@ knowledge2 = And(
 knowledge3 = And(
     general_knowledge,
     Biconditional(AKnight, Or(AKnight, AKnave)),
-    Biconditional(BKnight, Implication(AKnight, BKnave)),
+    Biconditional(BKnight, Implication(AKnight, AKnave)),
     Biconditional(BKnight, CKnave),
     Biconditional(CKnight, AKnight),
 )
